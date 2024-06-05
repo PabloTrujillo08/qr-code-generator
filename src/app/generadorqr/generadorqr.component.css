@@ -3,6 +3,8 @@
   margin-top: 50px;
 }
 
+/* Puedes eliminar estos estilos porque Bootstrap se encargará de ellos */
+/*
 input {
   width: 200px;
   padding: 10px;
@@ -12,3 +14,4 @@ input {
 button {
   padding: 10px 20px;
 }
+*/

@@ -1,7 +1,13 @@
-<div class="qr-generator">
-  <input type="text" placeholder="Enter data" #dataInput>
-  <button (click)="generateQRCode(dataInput.value)">Generate QR Code</button>
-  <div *ngIf="qrData">
-    <qrcode [qrdata]="qrData" [width]="128" [errorCorrectionLevel]="'M'"></qrcode>
+<div class="qr-generator container mt-5">
+  <div class="row justify-content-center">
+    <div class="col-md-6 text-center">
+      <div class="input-group mb-3">
+        <input type="text" class="form-control" placeholder="Enter data" #dataInput>
+        <button class="btn btn-primary" (click)="generateQRCode(dataInput.value)">Generate QR Code</button>
+      </div>
+      <div *ngIf="qrData" class="mt-4">
+        <qrcode [qrdata]="qrData" [width]="128" [errorCorrectionLevel]="'M'"></qrcode>
+      </div>
+    </div>
   </div>
 </div>

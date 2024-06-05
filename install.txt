@@ -1,0 +1,3 @@
+npm install
+
+npm install angularx-qrcode@16.0.2 --save
