@@ -1,0 +1,7 @@
+<div class="qr-generator">
+  <input type="text" placeholder="Enter data" #dataInput>
+  <button (click)="generateQRCode(dataInput.value)">Generate QR Code</button>
+  <div *ngIf="qrData">
+    <qrcode [qrdata]="qrData" [width]="128" [errorCorrectionLevel]="'M'"></qrcode>
+  </div>
+</div>
